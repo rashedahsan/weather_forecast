@@ -12,7 +12,15 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("wether app"),
+        title: Text("Wether app"),
+        centerTitle: true,
+      ),
+      body: Column(
+        children: [
+          Container(
+            child: Text("Sun rise"),
+          )
+        ],
       ),
     );
   }
