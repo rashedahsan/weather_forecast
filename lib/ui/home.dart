@@ -24,8 +24,15 @@ class _HomepageState extends State<Homepage> {
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             Weathermodel? weathermodel = snapshot.data;
-            return TodaysWeather(
-              weathermodel: weathermodel!,
+            return Column(
+              children: [
+                SizedBox(
+                  width: double.infinity,
+                  child: TodaysWeather(
+                    weathermodel: weathermodel!,
+                  ),
+                ),
+              ],
             );
           }
           if (snapshot.hasError) {
