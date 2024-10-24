@@ -7,7 +7,7 @@ import 'package:weather_app/model/weather_model.dart';
 class ApiService {
   Future<Weathermodel> getWeatherData(String searchText) async {
     // String url = "$base_url&q=searchText&days=7";
-    String url = "$base_url ";
+    String url = "$base_url&q=$searchText&days=7";
     print("getWeatherData");
 
     try {
